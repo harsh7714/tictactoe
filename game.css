@@ -1,0 +1,104 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, #330036, #38182F, #4E2A41);
+    background-size: cover;
+    font-family: 'Arial', sans-serif;
+
+}
+
+h1 {
+    color: #fff;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+
+h2 {
+    color: yellow;
+    font-size: 2rem;
+    margin-bottom: 10rem;
+    visibility: hidden;
+
+}
+
+#winner {
+    font-size: 2rem;
+    font-weight: bold;
+    animation: background-color 0.5s ease-out infinite;
+}
+
+#container {
+    height: 60vw;
+    width: 60vw;
+    gap: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.cell {
+    width: 20%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    background-color: #56666B;
+    color: #EEE1B3;
+    cursor: pointer;
+    border-radius: 10%;
+    border: none;
+    box-shadow: #56666B 0px 0px 10px;
+
+}
+
+@keyframes background-color {
+    0% {
+        color: #cf0d37;
+    }
+
+    100% {
+        color: #f1e534;
+    }
+
+}
+
+#reset {
+    width: 4rem;
+    height: 2rem;
+    font-weight: bold;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: black;
+    background-color: #EEE1B3;
+    border: none;
+    border-radius: 0.5rem;
+
+}
+
+#newGame {
+    width: 8rem;
+    height: 2rem;
+    font-weight: bold;
+    color: black;
+    background-color: #EEE1B3;
+    border: none;
+    border-radius: 1rem;
+}
+
+.points
+{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 2rem;
+    color: yellow
+}
